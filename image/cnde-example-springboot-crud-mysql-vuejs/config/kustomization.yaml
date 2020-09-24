@@ -1,0 +1,9 @@
+
+resources:
+  - stage-mysql.yaml
+  - pod.yaml
+
+secretGenerator:
+- name: stage-mysql-pass
+  literals:
+  - password=hellokoding
