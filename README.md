@@ -41,5 +41,5 @@ the above application has to be started and Wireshark has to be installed
 2. start sniffing
 
     ```bash
-    k sniff load -n trainer
+    k sniff load -n trainer -p
     ```
