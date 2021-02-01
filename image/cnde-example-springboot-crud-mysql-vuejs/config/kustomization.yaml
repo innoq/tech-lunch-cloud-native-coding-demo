@@ -2,6 +2,7 @@
 resources:
   - stage-mysql.yaml
   - pod.yaml
+  - service.yaml
 
 secretGenerator:
 - name: stage-mysql-pass
