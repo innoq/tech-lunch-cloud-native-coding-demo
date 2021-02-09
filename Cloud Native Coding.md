@@ -13,7 +13,7 @@ This repository contains some tools I showed during this event: [Tech Lunch Clou
 
 ## demo open-svc
 
-* execute `k open-svc product-web-test`
+* execute `k open-svc myapp`
 
 ## demo kubespy
 
@@ -35,11 +35,11 @@ the above application has to be started and Wireshark has to be installed
 1. create load
 
     ```bash
-    k run load --image=busybox -- /bin/sh -c "while true; do wget -O index.html http://product-web-test:8888/; sleep 1; done"
+    k run load --image=busybox -- /bin/sh -c "while true; do wget -O index.html http://myapp:8888/; sleep 1; done"
     ```
 
 2. start sniffing
 
     ```bash
-    k sniff load -n trainer -p
+    k sniff load -n trainer -p --socket /var/run/docker.sock
     ```
