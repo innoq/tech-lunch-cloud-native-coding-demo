@@ -8,3 +8,4 @@ spec:
   containers:
   - name: myapp
     image: fakod/cnde-example-springboot-crud-mysql-vuejs:latest
+    imagePullPolicy: IfNotPresent
