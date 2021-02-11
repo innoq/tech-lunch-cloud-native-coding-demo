@@ -1,6 +1,6 @@
 # test setup
 
-This repository contains some tools I showed during this event: [Tech Lunch Cloud Native Coding](https://www.youtube.com/watch?v=DHZHWUtY6CE)
+This repository contains the tools:
 
 * [open-svc](https://github.com/superbrothers/kubectl-open-svc-plugin)
 * [kubespy](https://github.com/huazhihao/kubespy)
